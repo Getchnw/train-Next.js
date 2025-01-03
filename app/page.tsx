@@ -17,11 +17,18 @@ function page() {
 export default page
 */
 
-function page() {
+import Link from "next/link"
+
+async function page() {
+  await new Promise((resolve) => setInterval(resolve,1000))
   return (
     <div>
-        page
+      
+        <div>
+         Home Page
+        </div>
     </div>
+    
   )
 }
 export default page
